@@ -1,0 +1,23 @@
+<%- include('partials/header') %>
+
+<p class="typespage-description">Cliquez sur un type pour voir tous les Pokémon de ce type :</p>
+
+<div class="typespage">
+
+    <% for (const type of types) { %>
+
+        <article class="<%= type.name.toLowerCase() %>">
+
+            <span>
+                <a href="/type/?type=<%= type.id %>"><%= type.name %></a>
+            </span>
+
+        </article>
+    
+    
+    <% } %>
+
+</div>
+
+
+<%- include('partials/footer') %>

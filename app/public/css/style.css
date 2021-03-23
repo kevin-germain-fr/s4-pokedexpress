@@ -1,0 +1,467 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    width: 100vw;
+    overflow-x: hidden;
+
+    background-color: #C14040;
+    font-family: 'Bree Serif', serif;
+
+}
+
+main {
+    width: 100%;
+}
+
+.main-header {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    width: 95%;
+    margin-top: 15px;
+
+    background-color: #EFE3E3;
+    border-radius: 20px;
+
+    color: #C14040;
+
+
+}
+
+.main-header h1 {
+
+    flex-grow: 1;
+
+    padding-left: 20px;
+
+    font-size: 1.7em;
+
+}
+
+.main-header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    font-size: 1.1em;
+
+    padding: 10px;
+}
+
+.main-header li {
+    padding: 10px;
+}
+
+.main-header a {
+    color: #C14040;
+    text-decoration: none;
+
+}
+
+.main-header a:hover {
+    color: #a53838;
+    text-decoration: underline;
+}
+
+
+.pokemons-list {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.home-article {
+
+    background-color: #982C2C;
+    margin: 30px;
+    padding: 20px;
+    border-radius: 20px;
+
+}
+
+.home-article img {
+    width: 300px;
+}
+
+.home-article figcaption {
+
+    text-align: center;
+    font-size: 1.2em;
+
+}
+
+.home-article figcaption a {
+    color: #EFE3E3;
+    text-decoration: none;
+}
+
+.header-pokemondetail {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #EFE3E3;
+    margin: 20px;
+}
+
+
+.pokemon-detail {
+
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+
+}
+
+.pokemon-detail img {
+    width: 400px;
+    margin-right: 100px;
+}
+
+.detail-article {
+    width: 50%;
+    margin: 20px;
+    padding-top: 40px;
+    padding-left: 20px;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: center;
+
+    background-color: #AB3838;
+}
+
+.detail-article h3 {
+
+    margin-bottom: 20px;
+
+    font-size: 2em;
+    font-weight: bolder;
+    color: #EFE3E3;
+}
+
+
+.type-list ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    font-size: 1.1em;
+
+    margin-bottom: 10px;
+
+}
+
+.type-list li {
+    margin-right: 10px;
+}
+
+.type-list li a {
+    color: #FFF;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.type-list li a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+thead {
+    line-height: 60px;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #EFE3E3;
+}
+
+tbody tr {
+    color: #FFF;
+    line-height: 30px;
+}
+
+tr th {
+    width: 200px;
+    text-align: left;
+}
+
+
+/* the second */
+td:nth-child(2) {
+width: 100px;
+
+}
+
+/* the second */
+td:nth-child(2) {
+    width: 100px;
+    
+    }
+
+
+progress {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 600px;
+    height: 20px;
+    margin-right: 20px;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #632B2B;
+    border-radius: 5px;
+
+  }
+
+
+progress::-webkit-progress-value {
+    background-color: #eee;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+}
+
+
+.footer-pokemon {
+    text-align: center;
+}
+
+.footer-pokemon a {
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #e2bfd1;
+}
+
+.footer-pokemon a:hover {
+    text-decoration: underline;
+}
+
+.typespage-description {
+    margin-top: 20px;
+    margin-left: 60px;
+    color: #FFF;
+}
+
+
+.typespage {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.typespage article {
+    margin: 10px;
+
+    width: 250px;
+    height: 60px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+}
+
+.typespage article a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.typespage article a:hover {
+    color: #FFF;
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.acier {
+    background-color: #AAAABB;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.combat {
+    background-color: #BB5544;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.dragon {
+    background-color: #7766EE;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.eau {
+    background-color: #3399FF;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+
+}
+
+.electrik {
+    background-color: #FFBB33;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.feu {
+    background-color: #FF4422;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.glace {
+    background-color: #77DDFF;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.insecte {
+    background-color: #AABB22;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.normal {
+    background-color: #BBAABB;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.plante {
+    background-color: #77CC55;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+.poison {
+    background-color: #AA5599;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.psy {
+    background-color: #FF5599;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.roche {
+    background-color: #BBAA66;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.sol {
+    background-color: #DDBB55;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.spectre {
+    background-color: #6666BB;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.tenebres {
+    background-color: #665544;
+    padding: 10px 5px;
+    border-radius: 5px;
+
+}
+
+.vol {
+    background-color: #6699FF;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+    /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+@media (max-width: 1500px) {
+    progress {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 200px;
+        height: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    progress {
+        display: none;
+    }
+}
